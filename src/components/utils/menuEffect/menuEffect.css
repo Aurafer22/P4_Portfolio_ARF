@@ -1,0 +1,51 @@
+.divEffect {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 350px;
+  height: 100px;
+}
+
+.divEffectOK {
+  display: flex;
+}
+.imgEffect {
+  width: 30px;
+}
+
+.pEffect1 {
+  font-family: 'Rockwell';
+  font-size: 70px;
+  color: var(--ARF-color-001);
+  padding-bottom: 0px;
+}
+
+.pEffect2 {
+  font-family: 'Rockwell';
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+.positionEffect1 {
+  position: absolute;
+  bottom: 90px;
+  left: 100px;
+}
+.positionEffect2 {
+  position: absolute;
+  bottom: 110px;
+  left: 360px;
+}
+
+.positionEffect3 {
+  position: absolute;
+  bottom: 170px;
+  left: 580px;
+}
+.positionEffect4 {
+  position: absolute;
+  bottom: 320px;
+  left: 800px;
+}

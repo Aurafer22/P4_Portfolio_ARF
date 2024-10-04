@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: local('Rockwell'), url('/assets/rockwell-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acumin Pro';
+  src: local('Acumin Pro'),
+    url('./assets/acumin-pro-extra-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: var(--ARF-color-001);
+  cursor: pointer;
+}
+:root {
+  --ARF-color-001: #20242e;
+  --ARF-color-002: #dee2e5;
+  --ARF-color-003: #fcff10;
+  --ARF-color-004: #93f8c6;
+  --ARF-color-005: #9bffe4;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Acumin Pro';
+  font-size: 16px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Rockwell';
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}

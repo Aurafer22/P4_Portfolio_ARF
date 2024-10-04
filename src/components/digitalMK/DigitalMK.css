@@ -1,0 +1,48 @@
+#digitalMK {
+  height: 100svh;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 60px;
+  gap: 40px;
+}
+#digitalMK > h2,
+#divContent {
+  width: 85%;
+  gap: 50px;
+}
+#digitalMK > h2 {
+  text-align: center;
+}
+.divIMG {
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 255, 16, 1) -20%,
+    rgba(155, 255, 228, 1) 100%
+  );
+  border-radius: 40px;
+}
+.divIMG > img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.divTextDMK {
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  gap: 40px;
+}
+.divUlDMK {
+  width: 90%;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.divUlDMK > ul > li {
+  margin-top: 10px;
+}
+.divButtons {
+  gap: 20px;
+}
