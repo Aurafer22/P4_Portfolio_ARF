@@ -1,0 +1,53 @@
+.divFlipCard {
+  background-color: transparent;
+  width: 320px;
+  height: 400px;
+  perspective: 1000px;
+}
+.divflipInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.caraA > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  position-visibility: inherit;
+}
+
+.caraA,
+.caraB {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.098);
+}
+.caraA > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  position-visibility: inherit;
+}
+.caraB {
+  transform: rotateY(180deg);
+  flex-direction: column;
+  justify-content: center !important;
+  gap: 40px;
+  padding: 30px;
+}
+.caraB > p {
+  font-size: 16px;
+  text-align: center;
+  justify-self: flex-start;
+}
+.divFlipCard:hover .divflipInner {
+  transform: rotateY(180deg);
+}

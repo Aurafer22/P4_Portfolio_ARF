@@ -14,15 +14,15 @@ export default function responsiveNav() {
     divLogo.classList.remove('divLogo')
     if (scroll > devSection) {
       logo.classList.add('logoSectInvert')
-      const liMenu = document.querySelector('.navSections > ul > li')
+      const liMenu = document.querySelectorAll('.navSections > ul > a > li')
       liMenu.forEach((li) => {
-        li.classList.add('liMenuInvert')
+        li.style.color = '#ffffff'
       })
     } else {
       logo.classList.remove('logoSectInvert')
-      const liMenu = document.querySelector('.navSections > ul > li')
+      const liMenu = document.querySelectorAll('.navSections > ul > a > li')
       liMenu.forEach((li) => {
-        li.classList.remove('liMenuInvert')
+        li.style.color = '#20242e'
       })
     }
   } else {

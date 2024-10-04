@@ -9,9 +9,6 @@ import './style.css'
 
 Header()
 window.addEventListener('scroll', responsiveNav)
-const main = document.createElement('main')
-main.id = 'main'
-document.body.append(main)
 Contact()
 Communication()
 DigitalMK()

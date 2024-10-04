@@ -4,6 +4,7 @@ import menuEffect from '../utils/menuEffect/menuEffect'
 import './Header.css'
 
 export default function Header(body) {
+  const main = document.querySelector('#main')
   const header = document.createElement('header')
   header.id = 'home'
   const imgHeader = document.createElement('img')
@@ -86,8 +87,8 @@ export default function Header(body) {
   aLinkedin.append(linkedinIcon)
   redesSociales.append(aEmail, aWhatsapp, aLinkedin)
   divLogo.append(aLogo, redesSociales)
-  header.append(imgHeader, aContacto, divLogo)
-  document.body.append(header, menu)
+  header.append(menu, imgHeader, aContacto, divLogo)
+  document.body.insertBefore(header, main)
 
   menuEffect('divEffectCom', 'positionEffect1', '+20 años')
   menuEffect('divEffectMK', 'positionEffect2', '+10 años')
