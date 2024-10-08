@@ -1,10 +1,10 @@
-import createButton from '../utils/Button/button'
+import createButton, { createButtonDownload } from '../utils/Button/button'
 import './Contact.css'
 
 export default function Contact() {
   const main = document.querySelector('#main')
   const contact = document.createElement('section')
-  contact.id = 'contact'
+  contact.id = 'contacto'
   contact.classList.add('flexContainer')
   const divAbout = document.createElement('article')
   divAbout.classList.add('divAbout', 'flexContainer', 'colum')
@@ -51,7 +51,7 @@ export default function Contact() {
   divExpert.append(iconComunication, iconMKD, iconDesign, iconDev)
   divAbout.append(divH2, pAbout, divExpert)
   divARF.append(imgARF, pARF)
-  createButton('Descargar CV', 'primaryButton', divARF)
+  createButtonDownload(divARF)
   contact.append(divAbout, divARF)
   main.append(contact)
 }

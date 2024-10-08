@@ -1,4 +1,4 @@
-import createButton from '../utils/Button/button'
+import createButton, { createButtonDownload } from '../utils/Button/button'
 import './DigitalMK.css'
 
 export default function DigitalMK() {
@@ -42,8 +42,13 @@ export default function DigitalMK() {
   li2DMK4.textContent = '✔️ Laoreet dolore magna aliquam'
   const divButtons = document.createElement('div')
   divButtons.classList.add('flexContainer', 'divButtons')
-  createButton('Saber más', 'secundaryButton', divButtons)
-  createButton('Descargar CV', 'primaryButton', divButtons)
+  createButton(
+    'Saber más',
+    'secundaryButton',
+    'https://wa.me/34610028822',
+    divButtons
+  )
+  createButtonDownload(divButtons)
 
   ulDMK.append(liDMK1, liDMK2, liDMK3, liDMK4)
   ulDMK2.append(li2DMK1, li2DMK2, li2DMK3, li2DMK4)

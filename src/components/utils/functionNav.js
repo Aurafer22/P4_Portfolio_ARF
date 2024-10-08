@@ -3,6 +3,8 @@ export default function responsiveNav() {
   const logo = document.querySelector('#logo')
   const redesSociales = document.querySelector('#redesSociales')
   const menu = document.querySelector('#nav')
+  const ulMenu = document.querySelector('#nav > ul')
+  const liHome = document.querySelector('#liHome')
   const scroll = window.scrollY
   const view = window.innerHeight
   const devSection = view * 4
@@ -11,18 +13,24 @@ export default function responsiveNav() {
     logo.classList.add('logoSect')
     redesSociales.classList.add('rsSections')
     menu.classList.add('navSections')
+    liHome.classList.remove('displayNone')
+    liHome.classList.add('flexContainer')
+    const liMenu = document.querySelectorAll('.navSections > ul > li > a')
+    liMenu.forEach((li) => {
+      li.classList.add('navColor')
+    })
     divLogo.classList.remove('divLogo')
     if (scroll > devSection) {
       logo.classList.add('logoSectInvert')
-      const liMenu = document.querySelectorAll('.navSections > ul > a > li')
       liMenu.forEach((li) => {
-        li.style.color = '#ffffff'
+        li.classList.remove('navColor')
+        li.classList.add('menuColor')
       })
     } else {
       logo.classList.remove('logoSectInvert')
-      const liMenu = document.querySelectorAll('.navSections > ul > a > li')
       liMenu.forEach((li) => {
-        li.style.color = '#20242e'
+        li.classList.remove('menuColor')
+        li.classList.add('navColor')
       })
     }
   } else {
@@ -31,5 +39,12 @@ export default function responsiveNav() {
     logo.classList.remove('logoSect')
     redesSociales.classList.remove('rsSections')
     menu.classList.remove('navSections')
+    liHome.classList.add('displayNone')
+    liHome.classList.remove('flexContainer')
+    const liMenu = document.querySelectorAll('#nav > ul > li > a')
+    liMenu.forEach((li) => {
+      li.classList.remove('navColor')
+      li.classList.add('menuColor')
+    })
   }
 }

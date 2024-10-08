@@ -30,22 +30,22 @@
 
 .positionEffect1 {
   position: absolute;
-  bottom: 90px;
-  left: 100px;
+  bottom: 110px;
+  left: 40px;
 }
 .positionEffect2 {
   position: absolute;
-  bottom: 110px;
+  bottom: 120px;
   left: 360px;
 }
 
 .positionEffect3 {
   position: absolute;
-  bottom: 170px;
+  bottom: 210px;
   left: 580px;
 }
 .positionEffect4 {
   position: absolute;
-  bottom: 320px;
+  bottom: 360px;
   left: 800px;
 }
