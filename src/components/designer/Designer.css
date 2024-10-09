@@ -1,5 +1,41 @@
 #diseño {
-  width: 100%;
+  background-image: url('./assets/montainColor_line.webp');
+  background-size: 88%;
+  background-position-y: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
   height: 100svh;
-  background-color: red;
+  padding: 80px 60px;
+  justify-content: left;
+  background-color: var(--ARF-BGcolor-002);
+}
+.divDesign {
+  width: 85%;
+  height: 100%;
+  flex-direction: column;
+}
+.divDesign > ul {
+  width: 70%;
+  height: auto;
+  font-family: 'Rockwell';
+  font-size: 20px;
+}
+
+.divEjemplos {
+  width: 75%;
+  height: 200px;
+  background-color: white;
+  border-radius: 40px;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.logoExample {
+  width: 150px;
+}
+
+.maquetacionExamp {
+  width: 150px;
+}
+.UIXexamp {
+  width: 150px;
 }

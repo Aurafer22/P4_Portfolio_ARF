@@ -9,17 +9,6 @@
   gap: 60px;
 }
 
-.animationContact {
-  animation: getContact 2s;
-}
-@keyframes getContact {
-  from {
-    translate: 200svh;
-  }
-  to {
-    translate: 0;
-  }
-}
 .divAbout {
   width: 50%;
   padding-top: 40px;

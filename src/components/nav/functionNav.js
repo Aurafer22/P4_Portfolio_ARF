@@ -7,7 +7,7 @@ export default function responsiveNav() {
   const liHome = document.querySelector('#liHome')
   const scroll = window.scrollY
   const view = window.innerHeight
-  const devSection = view * 4
+  const devSection = view * 5
   if (scroll > view) {
     divLogo.classList.add('logoSections')
     logo.classList.add('logoSect')

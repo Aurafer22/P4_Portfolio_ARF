@@ -1,6 +1,6 @@
 import Contact from '../contact/Contact'
 import getNav from '../nav/Nav'
-import responsiveNav from '../utils/functionNav'
+import responsiveNav from '../nav/functionNav'
 import menuEffect from '../utils/menuEffect/menuEffect'
 import './Header.css'
 

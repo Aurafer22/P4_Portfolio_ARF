@@ -3,13 +3,15 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 80px 60px;
-  gap: 40px;
 }
 #digitalMK > h2,
 #divContent {
   width: 85%;
-  gap: 50px;
 }
+#divContent {
+  height: 100%;
+}
+
 #digitalMK > h2 {
   text-align: center;
 }
@@ -22,6 +24,7 @@
     rgba(155, 255, 228, 1) 100%
   );
   border-radius: 40px;
+  margin-right: 50px;
 }
 .divIMG > img {
   width: 300px;

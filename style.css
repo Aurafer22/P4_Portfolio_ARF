@@ -29,6 +29,8 @@ a {
   --ARF-color-003: #fcff10;
   --ARF-color-004: #93f8c6;
   --ARF-color-005: #9bffe4;
+  --ARF-BGcolor-001: white;
+  --ARF-BGcolor-002: #dee2e558;
   scroll-behavior: smooth;
 }
 
