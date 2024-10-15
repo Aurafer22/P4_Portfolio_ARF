@@ -72,7 +72,7 @@ export default function Header(body) {
     const comunicacionMenu = document.querySelector('#liComunicacion')
     const mkDigitalMenu = document.querySelector('#liDigitalMK')
     const diseñoMenu = document.querySelector('#liDiseño')
-    const programacionMenu = document.querySelector('#liProgramación')
+    const programacionMenu = document.querySelector('#liProgramacion')
 
     comunicacionMenu.addEventListener('mouseover', (e) => {
       const divEffect = document.querySelector('#divEffectCom')

@@ -48,7 +48,7 @@ export default function DigitalMK() {
     'https://wa.me/34610028822',
     divButtons
   )
-  createButtonDownload(divButtons)
+  createButtonDownload('primaryButton', divButtons)
 
   ulDMK.append(liDMK1, liDMK2, liDMK3, liDMK4)
   ulDMK2.append(li2DMK1, li2DMK2, li2DMK3, li2DMK4)

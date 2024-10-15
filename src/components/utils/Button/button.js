@@ -10,23 +10,21 @@ export default function createButton(texto, clase, href, nodoPadre) {
   aButton.setAttribute('target', '_blank')
   button.append(aButton)
   nodoPadre.append(button)
-  nodoPadre.append(aButton)
   button.addEventListener('click', () => {
     aButton.click()
   })
 }
 
-export function createButtonDownload(nodoPadre) {
+export function createButtonDownload(estilo, nodoPadre) {
   const buttonDownload = document.createElement('button')
   buttonDownload.textContent = 'Descargar CV'
-  buttonDownload.classList.add('primaryButton')
+  buttonDownload.classList.add(estilo)
   const aDownload = document.createElement('a')
   aDownload.href = './assets/ARF_CV_2023.pdf'
   aDownload.download = 'CV_AuroraRamirez.pdf'
   aDownload.setAttribute('target', '_blank')
   buttonDownload.append(aDownload)
   nodoPadre.append(buttonDownload)
-  nodoPadre.append(aDownload)
   buttonDownload.addEventListener('click', () => {
     aDownload.click()
   })

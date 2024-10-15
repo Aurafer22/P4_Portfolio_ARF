@@ -33,13 +33,25 @@ export default function Contact() {
   })
 
   const divExpert = document.createElement('div')
-  divExpert.classList.add('divExpert')
-  const iconComunication = document.createElement('img')
-  const iconMKD = document.createElement('img')
-  const iconDesign = document.createElement('img')
-  const iconDev = document.createElement('img')
+  divExpert.classList.add('divExpert', 'flexContainer')
+  const iconEstudios = document.createElement('img')
+  const aIconEstudios = document.createElement('a')
+  aIconEstudios.title = 'Estudios'
+  iconEstudios.src = '/assets/icon_estudios.webp'
+  const iconExperiencia = document.createElement('img')
+  const aIconExperiencia = document.createElement('a')
+  aIconExperiencia.title = 'Experiencia'
+  iconExperiencia.src = './assets/icono_experiencia.webp'
+  const iconSkills = document.createElement('img')
+  const aIconSkills = document.createElement('a')
+  aIconSkills.title = 'Skills'
+  iconSkills.src = './assets/icono_skills.webp'
+  const iconIdiomas = document.createElement('img')
+  const aIconIdiomas = document.createElement('a')
+  aIconIdiomas.title = 'Skills'
+  iconIdiomas.src = './assets/icono_idiomas.webp'
   const divARF = document.createElement('div')
-  divARF.classList.add('divARF', 'flexContainer', 'colum')
+  divARF.classList.add('divARF', 'flexContainer')
   const imgARF = document.createElement('img')
   imgARF.src = './assets/ARF_profile.webp'
   const pARF = document.createElement('p')
@@ -48,17 +60,14 @@ export default function Contact() {
   aQuienSoy.append(h2QuienSoy)
   aQueHago.append(h2QueHago)
   divH2.append(aQuienSoy, aQueHago)
-  divExpert.append(iconComunication, iconMKD, iconDesign, iconDev)
+  aIconEstudios.append(iconEstudios)
+  aIconExperiencia.append(iconExperiencia)
+  aIconSkills.append(iconSkills)
+  aIconIdiomas.append(iconIdiomas)
+  divExpert.append(aIconEstudios, aIconExperiencia, aIconSkills, aIconIdiomas)
   divAbout.append(divH2, pAbout, divExpert)
   divARF.append(imgARF, pARF)
-  createButtonDownload(divARF)
+  createButtonDownload('primaryButton', divARF)
   contact.append(divAbout, divARF)
   main.append(contact)
 }
-
-// const contactBtn = document.querySelector('.contactoMenu')
-// contactBtn.addEventListener('click', () => {
-//   Contact()
-//   const contact = document.querySelector('#contact')
-//   contact.classList.add('animationContact')
-// })

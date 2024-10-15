@@ -7,7 +7,7 @@ export default function responsiveNav() {
   const liHome = document.querySelector('#liHome')
   const scroll = window.scrollY
   const view = window.innerHeight
-  const devSection = view * 5
+  // const devSection = view * 5
   if (scroll > view) {
     divLogo.classList.add('logoSections')
     logo.classList.add('logoSect')
@@ -20,19 +20,19 @@ export default function responsiveNav() {
       li.classList.add('navColor')
     })
     divLogo.classList.remove('divLogo')
-    if (scroll > devSection) {
-      logo.classList.add('logoSectInvert')
-      liMenu.forEach((li) => {
-        li.classList.remove('navColor')
-        li.classList.add('menuColor')
-      })
-    } else {
-      logo.classList.remove('logoSectInvert')
-      liMenu.forEach((li) => {
-        li.classList.remove('menuColor')
-        li.classList.add('navColor')
-      })
-    }
+    // if (scroll > devSection) {
+    //   logo.classList.add('logoSectInvert')
+    //   liMenu.forEach((li) => {
+    //     li.classList.remove('navColor')
+    //     li.classList.add('menuColor')
+    //   })
+    // } else {
+    //   logo.classList.remove('logoSectInvert')
+    //   liMenu.forEach((li) => {
+    //     li.classList.remove('menuColor')
+    //     li.classList.add('navColor')
+    //   })
+    // }
   } else {
     divLogo.classList.add('divLogo')
     divLogo.classList.remove('logoSections')
@@ -47,4 +47,43 @@ export default function responsiveNav() {
       li.classList.add('menuColor')
     })
   }
+  const sections = document.querySelectorAll('section')
+  const liMenu = document.querySelectorAll('#nav > ul > li > a')
+  const navMenu = document.querySelector('#nav')
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute('id')
+        const liItem = document.querySelector(`nav ul li`)
+        const navItem = document.querySelector(
+          `nav ul li a[href="#${entry.target.id}"]`
+        )
+        if (navItem) {
+          if (entry.isIntersecting) {
+            navItem.classList.add('check')
+            if (id === 'programacion') {
+              logo.classList.add('logoSectInvert')
+              liMenu.forEach((li) => {
+                li.classList.remove('navColor')
+                li.classList.add('menuColor')
+              })
+            } else {
+              logo.classList.remove('logoSectInvert')
+              liMenu.forEach((li) => {
+                li.classList.remove('menuColor')
+                li.classList.add('navColor')
+              })
+            }
+          } else {
+            navItem.classList.remove('check')
+          }
+        }
+      })
+    },
+    { threshold: 0.5 }
+  )
+  sections.forEach((section) => {
+    observer.observe(section)
+  })
 }

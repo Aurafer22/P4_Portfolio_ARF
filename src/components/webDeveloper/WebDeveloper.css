@@ -1,5 +1,142 @@
 #programacion {
   width: 100%;
-  height: 100svh;
+  min-height: 150svh;
   background-color: var(--ARF-color-001);
+  color: white;
+  padding: 80px 60px;
+}
+
+.divProgramacion {
+  width: 85%;
+  height: auto;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+.divProgramacion > h2 {
+  width: 100%;
+  height: auto;
+}
+#divContentDev {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.divTextProg {
+  width: 65%;
+  gap: 30px;
+  flex-direction: column;
+}
+.divTextProg > h3 {
+  justify-self: left;
+}
+.divImgProg {
+  width: 300px;
+  height: 400px;
+  margin-left: 20px;
+  border-radius: 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 255, 16, 1) -20%,
+    rgba(155, 255, 228, 1) 100%
+  );
+}
+
+.divImgProg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.imgSkills {
+  justify-self: left !important;
+}
+.imgSkills > img {
+  height: 60px;
+  margin-right: 20px;
+}
+.divProyectos {
+  height: auto;
+  padding-top: 40px;
+  overflow: hidden;
+}
+.divProyectos > h3 {
+  margin-bottom: 40px;
+}
+.divMisProyectos {
+  max-width: 85%;
+  height: 400px;
+  background-color: var(--ARF-color-001);
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardProject {
+  width: 0;
+  height: 300px;
+  flex-grow: 1;
+  background-color: var(--ARF-color-003);
+  border-radius: 20px;
+  color: var(--ARF-color-001);
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.cardProject:hover {
+  flex-direction: column;
+  width: 150px;
+  height: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.cardProject > p {
+  display: none;
+  padding: 20px 20px;
+  font-size: 13px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.cardProject:hover > p {
+  display: flex;
+}
+.aProject {
+  height: 100%;
+  border-radius: 20px;
+}
+.aProject > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.cardProject:hover .aProject {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  padding-top: 0;
+}
+.cardProject:hover .aProject > img {
+  border-radius: 0;
+}
+.aGitHub > img {
+  display: none;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s ease;
+}
+
+.cardProject:hover > a .aGitHub > img {
+  display: flex;
+}
+.cardProject:hover .aGitHub > img {
+  display: flex;
+}
+.divButtonsProg {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }

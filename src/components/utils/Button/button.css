@@ -9,14 +9,21 @@
   font-size: 14px;
   cursor: pointer;
 }
+.primaryButton:hover {
+  background-color: #b3f8e6;
+}
 .secundaryButton {
   width: 200px;
   height: 60px;
-  background-color: var(--ARF-color-002);
+  background-color: white;
   border: 2px solid var(--ARF-color-001);
   border-radius: 10px;
   font-family: 'Rockwell';
   color: var(--ARF-color-001);
   font-size: 14px;
   cursor: pointer;
+}
+
+.secundaryButton:hover {
+  background-color: var(--ARF-color-002);
 }

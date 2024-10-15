@@ -1,0 +1,36 @@
+#CTA {
+  height: auto;
+  padding: 80px 60px;
+}
+.divCTA {
+  width: 85%;
+  flex-direction: column;
+  gap: 40px;
+}
+.divCTA > p {
+  width: 80%;
+}
+.contentCTA {
+  min-width: 65%;
+  height: auto;
+  gap: 60px;
+  background-color: var(--ARF-color-003);
+  border-radius: 40px;
+  padding: 60px;
+}
+.contentCTA > div:first-child {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-color: white;
+}
+.contentCTA > div > img {
+  width: 200px;
+}
+.contentCTA > div > ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contentCTA > div > ul > li {
+  margin-bottom: 15px;
+}

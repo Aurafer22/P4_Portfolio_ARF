@@ -26,7 +26,7 @@ export const dataNav = [
   {
     nombre: 'Programación',
     href: '#programacion',
-    id: 'liProgramación',
+    id: 'liProgramacion',
     clase: 'flexContainer'
   }
 ]
