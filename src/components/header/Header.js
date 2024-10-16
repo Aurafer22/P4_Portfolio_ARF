@@ -34,7 +34,7 @@ export default function Header(body) {
     'https://www.linkedin.com/in/auroraram%C3%ADrezfern%C3%A1ndez/'
   aLinkedin.setAttribute('target', '_blank')
 
-  imgHeader.src = '../../../public/assets/montaña_header.webp'
+  imgHeader.src = './assets/montaña_header.webp'
   imgHeader.alt = 'montaña que muestra el recorrido profesional'
   imgHeader.classList.add('imgHeader')
   divLogo.classList.add('divLogo', 'flexContainer')
