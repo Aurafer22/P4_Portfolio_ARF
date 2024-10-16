@@ -51,6 +51,9 @@
   #diseño {
     padding: 40px 20px;
   }
+  .divDesign > ul {
+    width: 50%;
+  }
   .logoExample,
   .maquetacionExamp,
   .UIXexamp {

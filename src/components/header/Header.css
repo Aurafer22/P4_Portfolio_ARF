@@ -84,3 +84,8 @@ header {
     display: none;
   }
 }
+@media (max-width: 450px) {
+  .imgHeader {
+    object-position: center;
+  }
+}
