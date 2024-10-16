@@ -39,8 +39,11 @@ export default function responsiveNav() {
 
   if (mediaquery < 1080 && scroll < view) {
     ulMenu.classList.remove('displayNone')
+    divLogo.classList.remove('logoSections')
     divLogo.classList.add('divLogo', 'flexContainer')
+    logo.classList.remove('logoSect')
     logo.classList.add('logo')
+    redesSociales.classList.remove('rsSections')
     redesSociales.classList.add('redesSociales')
   }
 
