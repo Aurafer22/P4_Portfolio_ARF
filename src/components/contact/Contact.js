@@ -48,7 +48,7 @@ export default function Contact() {
   iconSkills.src = './assets/icono_skills.webp'
   const iconIdiomas = document.createElement('img')
   const aIconIdiomas = document.createElement('a')
-  aIconIdiomas.title = 'Skills'
+  aIconIdiomas.title = 'Idiomas'
   iconIdiomas.src = './assets/icono_idiomas.webp'
   const divARF = document.createElement('div')
   divARF.classList.add('divARF', 'flexContainer')

@@ -24,7 +24,7 @@
 }
 
 .divEjemplos {
-  width: 80%;
+  max-width: 80%;
   min-height: 300px;
   background-color: white;
   border-radius: 40px;
@@ -35,4 +35,25 @@
 .maquetacionExamp,
 .UIXexamp {
   width: 200px;
+}
+
+@media (max-width: 1080px) {
+  .divDesign {
+    width: 100%;
+  }
+  .divDesign > ul {
+    width: 100%;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 550px) {
+  #diseño {
+    padding: 40px 20px;
+  }
+  .logoExample,
+  .maquetacionExamp,
+  .UIXexamp {
+    width: 150px;
+  }
 }

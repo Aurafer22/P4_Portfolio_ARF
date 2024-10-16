@@ -6,7 +6,6 @@
   width: 85%;
   min-height: 100svh;
   padding: 80px 60px;
-  /* justify-content: bott; */
   gap: 40px;
 }
 
@@ -33,12 +32,10 @@
   height: 80px;
   background-color: var(--ARF-color-002);
   border-radius: 10px;
-  /* margin: auto; */
 }
 .divARF {
   flex-direction: column;
   gap: 20px;
-  /* align-self: end; */
 }
 .divARF > img {
   width: 350px;
@@ -51,4 +48,37 @@
   text-align: center;
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+  .divAbout {
+    width: 80%;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1080px) {
+  #contacto {
+    width: 100%;
+  }
+  .divAbout {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  #contacto {
+    padding: 40px 20px;
+  }
+  .divAbout > div h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .divARF > img {
+    width: 280px;
+    height: 280px;
+  }
+  .divExpert > a > img {
+    height: 60px;
+  }
 }

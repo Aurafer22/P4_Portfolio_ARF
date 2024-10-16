@@ -49,3 +49,43 @@
   bottom: 360px;
   left: 800px;
 }
+
+@media (max-width: 1270px) {
+  .positionEffect2 {
+    bottom: 180px;
+  }
+  .positionEffect3 {
+    bottom: 280px;
+    left: 460px;
+  }
+  .positionEffect4 {
+    bottom: 380px;
+    left: 700px;
+  }
+}
+@media (max-width: 1180px) {
+  .pEffect1 {
+    font-size: 60px;
+  }
+
+  .pEffect2 {
+    font-size: 30px;
+  }
+  .positionEffect2 {
+    bottom: 200px;
+    left: 240px;
+  }
+  .positionEffect3 {
+    bottom: 260px;
+    left: 320px;
+  }
+  .positionEffect4 {
+    bottom: 380px;
+    left: 540px;
+  }
+}
+@media (max-width: 980px) {
+  .divEffect {
+    display: none;
+  }
+}

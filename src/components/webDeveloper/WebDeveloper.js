@@ -8,7 +8,7 @@ export default function WebDeveloper() {
   const divProgramacion = document.createElement('article')
   divProgramacion.classList.add('divProgramacion', 'flexContainer')
   divProgramacion.innerHTML = `
-  <h2> Desarrollo Web FullStack</h2>
+  <h2> DESARROLLO WEB FULLSTACK</h2>
   <div id="divContentDev" class="flexContainer"> 
   <div class="divTextProg flexContainer">
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>

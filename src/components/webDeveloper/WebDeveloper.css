@@ -140,3 +140,64 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+
+@media (max-width: 1400px) {
+  .divImgProg {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media (max-width: 1080px) {
+  .divProgramacion {
+    width: 100%;
+    align-items: center;
+  }
+  .divImgProg {
+    width: 250px;
+    height: 350px;
+  }
+  .divMisProyectos {
+    max-width: 100%;
+  }
+  .divButtonsProg {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .divProgramacion > h2 {
+    text-align: center;
+  }
+  #divContentDev {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 60px;
+  }
+  .divTextProg {
+    width: 100%;
+  }
+  .divImgProg {
+    max-width: 600px;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .divProyectos > h3 {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  #programacion {
+    align-items: center;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 430px) {
+  .cardProject > p {
+    padding: 20px 10px;
+    font-size: 11px;
+  }
+  .imgSkills > img {
+    height: 55px;
+    margin-right: 10px;
+  }
+}

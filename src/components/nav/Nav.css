@@ -3,7 +3,7 @@
   height: 150px;
   position: absolute;
   top: 40px;
-  padding: 40px;
+  left: 40px;
 }
 .ulMenu {
   height: 100%;
@@ -15,7 +15,6 @@
 }
 
 .ulMenu > li > a {
-  /* color: white; */
   font-family: 'Rockwell';
   font-size: 20px;
   text-align: center;
@@ -35,7 +34,8 @@
 .navSections > ul {
   flex-direction: column-reverse;
   position: fixed;
-  height: 150px;
+  width: 200px;
+  height: auto;
   top: 150px;
   right: 40px;
   padding: 0px;
@@ -58,4 +58,35 @@
 }
 .displayOK {
   display: flex;
+}
+
+@media (max-width: 1300px) {
+  #nav {
+    width: 200px;
+    height: auto;
+    padding: 0;
+  }
+  .ulMenu {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1080px) {
+  .navSections {
+    display: none;
+  }
+  .logoSections {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  #nav {
+    top: 280px;
+    left: 200px;
+  }
+  .ulMenu > li > a {
+    font-size: 16px;
+  }
 }

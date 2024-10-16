@@ -1,4 +1,4 @@
-.comunicacion {
+#comunicacion {
   min-height: 100svh;
   padding: 80px 60px;
   gap: 40px;
@@ -20,4 +20,17 @@
   text-align: justify;
   margin: 50px 0px;
   width: 85%;
+}
+
+@media (max-width: 1080px) {
+  .cardsComunicacion,
+  .comunicacion > h2,
+  .comunicacion > p {
+    width: 100%;
+  }
+}
+@media (max-width: 550) {
+  #comunicacion {
+    padding: 40px 20px;
+  }
 }

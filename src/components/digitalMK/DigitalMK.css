@@ -51,3 +51,40 @@
 .divButtons {
   gap: 10px;
 }
+
+@media (max-width: 1400px) {
+  .divIMG {
+    width: 200px;
+    height: 480px;
+  }
+}
+@media (max-width: 1080px) {
+  #digitalMK > h2,
+  #divContent {
+    width: 100%;
+  }
+  .divUlDMK {
+    width: 100%;
+    gap: 60px;
+  }
+}
+@media (max-width: 890px) {
+  .divIMG {
+    max-width: 600px;
+    height: 250px;
+    margin-right: 0px;
+  }
+  .divTextDMK {
+    margin-top: 40px;
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  #digitalMK {
+    align-items: center;
+    padding: 40px 20px;
+  }
+  .divUlDMK {
+    gap: 10px;
+  }
+}

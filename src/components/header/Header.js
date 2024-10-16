@@ -48,7 +48,7 @@ export default function Header(body) {
   whatsappIcon.src = './assets/whatsapp_icon.webp'
   linkedinIcon.src = './assets/linkedin_icon.webp'
   contactoMenu.src = './assets/ubication_icon.webp'
-  aContacto.href = '#contacto'
+  aContacto.href = '#CTA'
   contactoMenu.classList.add('contactoMenu')
 
   aLogo.append(logo)
